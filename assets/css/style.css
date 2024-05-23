@@ -76,6 +76,7 @@ img {
 
 /* content wrapper */
 #content-wrapper {
+  display: none;
   padding-left: 240px;
 }
 
@@ -134,7 +135,6 @@ img {
 }
 
 /* social icon  */
-
 
 .social-icons a {
   width: 40px;
