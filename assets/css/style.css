@@ -76,9 +76,19 @@ img {
 
 /* content wrapper */
 #content-wrapper {
-  display: none;
   padding-left: 240px;
 }
+
+.bliss {
+  padding-left: 240px;
+}
+
+@media screen and (max-width: 800px) {
+  .bliss{
+    padding-left: 0;
+  }
+}
+
 
 /* the button */
 .btn {
