@@ -11,33 +11,39 @@
   </head>
 
   <body>
-    
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md  navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
       <div class="container flex-lg-column">
         <a class="navbar-brand" href="#">
-          <span class="h3 fw-bold d-block ">JMA</span>
+          <span class="h3 fw-bold d-block d-lg-none">JMA</span>
           <!-- <img src="assets/images/mohero4.jpg" alt=""> -->
         </a>
-
-<!-- Offcanvas tigger -->
-       <button class="btn btn-dark d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="navbarNav"
+          aria-controls="navvbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="#home">home</a>
             </li>
 
-            <li class="nav-item">              <a class="nav-link" href="#skills">skills</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="work.html">work</a>
+              <a class="nav-link" href="#work">work</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="about.html">about</a>
+              <a class="nav-link" href="#about">about</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">contact</a>
@@ -45,65 +51,24 @@
           </ul>
         </div>
       </div>
-    </nav>  
-
-
-
-
-
-
-
-
-
-
-    
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-      
-    </div>
-    <div class="dropdown mt-3">
-      <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        Menu
-      </button> -->
-      <ul class="text-center list-group " style="list-style-type: none;">
-        <li><a class="dropdown-item" href="#home">HOME</a></li>
-        <br>
-        <li><a class="dropdown-item" href="#skills">SKILLS</a></li>
-        <br>
-        <li><a class="dropdown-item" href="work.html">WORK</a></li>
-        <br>
-        <li><a class="dropdown-item" href="about.html">ABOUT</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
+    </nav>
 
     <!-- content wrapper -->
-    <div id="content-wrapper " class="bliss">
+    <div id="content-wrapper">
       <!-- home section -->
       <section id="home" class="full-height px-lg-5">
         <div class="container">
           <div class="row">
             <div class="col-lg-10">
               <h1 class="display-4 fw-bold" data-aos="fade-up">
-                HI, I'M A <span class="text-brand">WEB DEVELOPER</span>
+                HI, I'M A <span class="text-brand">FRONT-END DEVELOPER</span>
               </h1>
               <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-                I am Jokotoye Moyinoluwa Anthonia, a highly motivated young
-                individual
+                I am Moyinoluwa Anthonia, a highly motivated young individual
+                with with a strong foundation in HTML and CSS, and a growing
+                expertise in JavaScript. I love transforming ideas into visually
+                appealing, user-friendly websites and am continually expanding
+                my skills to create more interactive digital experiences.
               </p>
               <div data-aos="fade-up" data-aos-delay="600">
                 <a href="#work" class="btn btn-brand me-3">Explore my work</a>
@@ -124,16 +89,16 @@
               <h1 class="text-brand display-4 fw-bold">SKILLS</h1>
             </div>
           </div>
-          <div class="row image_style">
-            <div class="col-lg-2 col-sm-6" data-aos="fade-up">
+          <div class="row gy-4 image_style">
+            <!-- <div class="col-2 col-sm-6" data-aos="fade-up">
               <img src="assets/images/htm5.PNG" alt="html" />
-            </div>
+            </div> -->
             <div
               class="col-lg-2 col-sm-6"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <img src="assets/images/bs.PNG" alt="html" /> 
+              <img src="assets/images/bs.PNG" alt="html" />
             </div>
             <div
               class="col-lg-2 col-sm-6"
@@ -164,15 +129,18 @@
             >
               <img src="assets/images/laravel1.PNG" alt="html" />
             </div>
+            <div class="col-2 col-sm-6" data-aos="fade-up">
+              <img src="assets/images/htm5.PNG" alt="html" />
+            </div>
           </div>
           <div class="row">
-            <div
+            <!-- <div
               class="col-lg-2 col-sm-6"
               data-aos="fade-up"
               data-aos-delay="1400"
             >
               <img src="assets/images/mui.PNG" alt="html" />
-            </div>
+            </div> -->
             <div
               class="col-lg-2 col-sm-6"
               data-aos="fade-up"
@@ -180,38 +148,171 @@
             >
               <img src="assets/images/php.PNG" alt="html" />
             </div>
-            <div
+            <!-- <div
               class="col-lg-2 col-sm-6"
               data-aos="fade-up"
               data-aos-delay="1800"
             >
               <img src="assets/images/tailwind.PNG" alt="html" />
-            </div>
-            <div
+            </div> -->
+            <!-- <div
               class="col-lg-2 col-sm-6"
               data-aos="fade-up"
               data-aos-delay="2000"
             >
               <img src="assets/images/mui.PNG" alt="html" />
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- work section -->
+      <!-- <section
+        id="work"
+        class="full-height  justify-content-start px-lg-4"
+      >
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-md-8">
+              <h1 class="text-brand display-4 fw-bold">WORK</h1>
+              
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-img rounded-4">
+                      <img
+                        class="rounded-4"
+                        src="assets/images/to-do.JPG"
+                        alt=""
+                      />
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>TO-DO App</h4>
+                      <p>
+                        A to-do app is a simple application that helps users
+                        organize tasks, set priorities, and track progress.
+                      </p>
+                      <a href="#" class="link-custom">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-img rounded-4">
+                      <img
+                        class="rounded-4"
+                        src="assets/images/nails-shop.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>TO-DO App</h4>
+                      <p>
+                        A to-do app is a simple application that helps users
+                        organize tasks, set priorities, and track progress.
+                      </p>
+                      <a href="#" class="link-custom">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-img rounded-4">
+                      <img
+                        class="rounded-4"
+                        src="assets/images/cofee.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>TO-DO App</h4>
+                      <p>
+                        A to-do app is a simple application that helps users
+                        organize tasks, set priorities, and track progress.
+                      </p>
+                      <a href="#" class="link-custom">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- workkk section-->
+      <section id="work" class="full-height justify-content-start px-lg-4">
+        <div data-aos="fade-up">
+          <h1 class="text-brand display-4 fw-bold p-lg-4">WORK</h1>
+          <!-- coming here to input work projects -->
+          <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-img rounded-4">
+                  <img
+                    class="rounded-4 h-100"
+                    src="assets/images/to-do.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>TO-DO App</h4>
+                  <p>
+                    A to-do app is a simple application that helps users
+                    organize tasks, set priorities, and track progress.
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-img rounded-4">
+                  <img
+                    class="rounded-4 max-h-100"
+                    src="assets/images/new.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>A Nails-Shop Landing Page</h4>
+                  <p>
+                    A landing page is a standalone web page designed with a
+                    specific goal, such as generating leads, selling a product,
+                    or encouraging user action
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-img rounded-4">
+                  <img
+                    class="rounded-4 h-100"
+                    src="assets/images/cofee.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Clone Coffee Landing Page </h4>
+                  <p>
+                    A landing page is a standalone web page designed with a
+                    specific goal, such as generating leads, selling a product,
+                    or encouraging user action
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- work section
-       <section id="work" class="full-height justify-content-start px-lg-5">
-        <div class="container">
-          <div class="row pb-4" data-aos="fade-up">
-            <div class="col-lg-8">
-              <h1 class="text-brand display-4 fw-bold">WORK</h1>
-               coming here to input work projects
-            </div>
-          </div>
-        </div>
-      </section>   -->
-
       <!-- about section -->
-      <!-- <section id="about" class="full-height justify-content-start px-lg-5">
+      <section id="about" class="full-height justify-content-start px-lg-5">
         <div class="container">
           <div class="row pb-4" data-aos="fade-up">
             <div class="col-lg-8">
@@ -242,7 +343,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- contact section -->
       <section id="contact" class="full-height px-lg-5">
@@ -292,14 +393,17 @@
         <div class="container">
           <div class="row gy-4 justify-content-between">
             <div class="col-auto">
-              <p class="mb-0">Copyright text goes here</p>
+              <p class="mb-0">
+                &copy; 2025 JMA.
+                <span class="copy-right">All rights reserved</span>
+              </p>
             </div>
             <div class="col-auto">
               <div class="social-icons">
-                <a href="https://www.instagram.com/prettiest__mo?igsh=ZW92bG00eTYwMTdr$utmsource=qr" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
                 <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
-                <a href="https://github.com/Moyin001"> <i class="fa-brands fa-github"></i> </a>
-                <a href="https://www.linkedin.com/in/moyioluwa-jokotoye"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a href="#"> <i class="fa-brands fa-github"></i> </a>
+                <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
               </div>
             </div>
           </div>
