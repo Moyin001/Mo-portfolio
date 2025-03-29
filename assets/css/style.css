@@ -1,10 +1,11 @@
 :root {
-  --black: #070707f5;
+  --black: #0d0d0df5;
   --white: #f5e6e6;
   --headcolor: #fff;
   --brandcolor: #f8d7db;
   --brandcolor2: #f8c3bf;
 }
+
 
 body {
   background-color: var(--black);
@@ -51,6 +52,8 @@ img {
   border-bottom: 2px solid #ffffffc8;
 }
 
+
+
 /* nav bar */
 
 .navbar .nav-link {
@@ -96,6 +99,9 @@ img {
   background-color: var(--brandcolor2);
   color: var(--black);
 }
+.lead{
+  text-transform: capitalize;
+}
 
 .link-custom {
   font-weight: 700;
@@ -133,6 +139,14 @@ img {
   height: 44px;
 }
 
+.shadow-effect{
+  transition: all 0.5s;
+}
+
+.shadow-effect:hover{
+  box-shadow: -6px 6px 0 0 var(--brandcolor2);
+}
+
 /* social icon  */
 
 
@@ -147,3 +161,26 @@ img {
   font-size: 24px;
   color: #030303;
 }
+
+.social-icons a:hover{
+  background-color: #cb9e9b;
+}
+
+/* card */
+.card-custom .card-custom-img{
+  overflow: hidden;
+}
+
+.card-custom .card-custom-img img{
+  transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-img img{
+  transform: scale(1.1);
+}
+
+.copy-right{
+  font-style: italic;
+}
+
+
