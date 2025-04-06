@@ -1,16 +1,52 @@
-AOS.init();
-// You can also pass an optional settings object
-// below listed default settings
+// aos animation
 AOS.init({
-  
-
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 800, // values from 0 to 3000, with step 50ms
-  easing: "ease", // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+  offset: 120,
+  delay: 0,
+  duration: 800,
+  easing: "ease",
+  once: false,
+  mirror: false,
+  anchorPlacement: "top-bottom",
 });
 
+// menu toggle logic
+const menuToggle = document.getElementById('menu-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+const mobileClose = document.getElementById('mobile-close');
+
+// Open mobile nav
+menuToggle.addEventListener('click', () => {
+  mobileNav.classList.remove('translate-x-full');
+  mobileNav.classList.add('translate-x-0');
+  menuToggle.setAttribute('aria-expanded', true);
+});
+
+// Close on close button
+mobileClose.addEventListener('click', () => {
+  closeMobileNav();
+});
+
+// Close on link click inside nav
+mobileNav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    closeMobileNav();
+  });
+});
+
+// Close on outside click
+document.addEventListener('click', (e) => {
+  if (
+    !mobileNav.contains(e.target) &&
+    !menuToggle.contains(e.target) &&
+    !mobileNav.classList.contains('translate-x-full') // only if open
+  ) {
+    closeMobileNav();
+  }
+});
+
+// Function to close menu
+function closeMobileNav() {
+  mobileNav.classList.remove('translate-x-0');
+  mobileNav.classList.add('translate-x-full');
+  menuToggle.setAttribute('aria-expanded', false);
+}

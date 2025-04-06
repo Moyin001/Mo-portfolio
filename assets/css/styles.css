@@ -18,6 +18,15 @@
   background-color: var(--brandcolor2);
 }
 
+.primary-btn {
+  background-color: var(--brandcolor);
+}
+
+.primary-btn:hover {
+  background-color: var(--brandcolor2);
+  font-weight: 700;
+}
+
 .border-brandcolor2 {
   border-color: var(--brandcolor2);
 }
@@ -26,4 +35,8 @@ body {
   background-color: var(--black);
   color: var(--white);
   font-family: sans-serif;
+  max-width: 1920px;
+  margin: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
