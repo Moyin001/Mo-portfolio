@@ -40,3 +40,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+.icon:hover{
+  color: var(--brandcolor2);
+}
