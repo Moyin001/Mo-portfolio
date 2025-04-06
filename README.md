@@ -27,8 +27,8 @@ Mo-portfolio is a personal portfolio project designed to showcase skills, projec
   ```
 
 ## Usage
-- Update the content in the `src/data` folder to reflect your personal information.
-- Customize styles in the `src/styles` folder.
+- Update the content in the `/index.html` file to reflect your personal information.
+- Customize styles in the `assets/css/styles.css` file.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
